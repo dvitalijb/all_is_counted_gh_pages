@@ -6,11 +6,8 @@ function countClick() {
     return textSpan++;
 }
 
-let counter = function () {
-    return countClick();
-}
 document.addEventListener('click', () => {
-    const newTextSpan = counter();
+    const newTextSpan = countClick();
     tagSpan.textContent = newTextSpan;
     sessionStorage.setItem('textSpan', newTextSpan);
 })
